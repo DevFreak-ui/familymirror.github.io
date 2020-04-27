@@ -1,0 +1,119 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+.container{
+	width: 100%;
+	height: 100vh;
+	background-image: url('../images/bg.png');
+	background-size: cover;
+	background-position: center;
+}
+
+.container .overlay{
+	width: 100%;
+	height: 100vh;
+	background-color: #000000;
+	opacity: 78%;
+	position: relative;
+}
+
+.log{
+	width: 28%;
+	background-color: #000000;
+	position: relative;
+	top: -100%;
+	margin: 10% ;
+	padding: 10px;
+	color: #fff;
+	margin: auto;
+	margin-top: 10%;
+	opacity: 85%;
+}
+
+.log h1{
+	text-align: center;
+	letter-spacing: 5px;
+	margin-top: -5px;
+	margin-bottom: 30px;
+}
+
+.log form{
+	width: 90%;
+	height: 80%;
+	position: relative;
+	margin: 10px auto;
+	padding: 5%;
+	font-family: 'Roboto', sans-serif;
+}
+
+.log form table{
+	padding: 5px; 
+}
+
+button{
+	width: 100px;
+	margin-left: 35%;
+	margin-top: 20px;
+	padding: 8px; 
+	background: none;
+	color: #ffff;
+	font-size: 15px;
+	font-weight: lighter;
+}
+
+.log input{
+	background: none;
+	outline: none;
+	border: 0;
+	border-bottom: 1px solid #fff;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+
+/* mobile phones ranging from 600px and smaller */
+@media only screen and (max-width: 599px) {
+	body{
+		overflow: hidden;
+	}
+	.log form,.log form table{
+		width: 100%;
+		margin: 10px auto;
+	}
+	.log{
+		width: 100%;
+		background: none;
+	}
+	.container .overlay{
+		opacity: 85%;
+	}
+	button{
+		margin-top: 50px;
+	}
+}
+
+
+/* tablets phones ranging from 600px and larger */
+@media only screen and (min-width: 600px) {
+	body{
+		overflow: hidden;
+	}
+	.log{
+		width: 60%;
+	}
+}
+
+
+@media only screen and (min-width: 1303px) {
+	.log{
+		width: 28%;
+	}
+	.log table{
+		width: 100%;
+		margin-top: 10% auto;
+	}
+}
